@@ -1,0 +1,18 @@
+.users{
+    @include list-style(none);
+    @include border-radius(5px);
+    @include resize-box(10%, 80%);
+
+    position:absolute;
+    top:10%;
+    right:0;
+    background-color:#b0e0e6;
+    margin:0 5px 0 0;
+    padding:5px;
+    border:1px solid #000;
+    
+    display:inline-block;
+    overflow: auto;
+}
+
+.current-user{ color: green; }

@@ -1,0 +1,25 @@
+<div class="modal fade" id="form-content" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div ng-switch="state">
+      <div ng-switch-when="about"><div ng-include src="'./html/dialog/about.html'"></div></div>
+      <div class="modal-dialog" ng-switch-default>
+        <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <h4 class="modal-title" id="myModalLabel">Change your name</h4>
+            </div>
+            <div class="modal-body">
+              <span>Your current username is {{name}}</span>
+              <form action="" ng-submit="changeName()">
+                <div>
+                    <input name="name" type="text" ng-model="friend.name"/>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" ng-click="changeName()">Save changes</button>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>

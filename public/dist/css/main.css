@@ -1,0 +1,66 @@
+/* In AngularJS adding empty href attributes to link tags will cause unwanted route changes. */
+.nav, .pagination, .carousel, .panel-title a {
+  cursor: pointer; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font: 13px Helvetica, Arial; }
+
+/*
+.msg-sender-box { background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%; }
+*/
+.msg-sender-box {
+  background: #000;
+  padding: 3px;
+  position: fixed;
+  bottom: 0;
+  width: 100%; }
+  .msg-sender-box input {
+    border: 0;
+    padding: 10px;
+    width: 90%;
+    margin-right: .5%; }
+  .msg-sender-box button {
+    width: 9%;
+    background: #82e0ff;
+    border: none;
+    padding: 10px; }
+
+.msg, .user-chat-msg {
+  list-style-type: none;
+  margin-bottom: 70px; }
+
+.user-chat-msg {
+  position: fixed;
+  top: 10%;
+  width: 100%;
+  padding: 0; }
+  .user-chat-msg li {
+    padding: 5px 10px; }
+  .user-chat-msg li:nth-child(odd) {
+    background: #eee; }
+
+.users {
+  list-style-type: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  width: 10%;
+  height: 80%;
+  position: absolute;
+  top: 10%;
+  right: 0;
+  background-color: #b0e0e6;
+  margin: 0 5px 0 0;
+  padding: 5px;
+  border: 1px solid #000;
+  display: inline-block;
+  overflow: auto; }
+
+.current-user {
+  color: green; }
