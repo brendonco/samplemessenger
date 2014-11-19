@@ -10,9 +10,5 @@
     "express": "^4.9.0",
     "socket.io": "^1.1.0"
   },
-  "scripts": {
-    "start": "node server.js"
-  },
-  "main": "server.js",
   "author": "Brendon Co"
 }
