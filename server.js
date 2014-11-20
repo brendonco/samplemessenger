@@ -27,7 +27,7 @@ var MessengerApi = function(){
 
         //For socket.io.client to work
         //Assigned the 
-        self.appServer = self.http.listen(3000, function(){
+        self.appServer = self.http.listen(process.env.PORT || 3000, function(){
             console.log('listening on : 3000');
         });
 
