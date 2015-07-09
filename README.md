@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/brendonco/samplemessenger.svg?branch=master)](https://travis-ci.org/brendonco/samplemessenger)
+
 # Sample Messenger
 The steps in designing and building a real-time features are discussed in detail at Amazon - BEANS (Bootstrap ExpressJS AngularJS NodeJS SocketIO) book.
 
